@@ -1,0 +1,2 @@
+(Назовем таблицу Employee)
+SELECT surname FROM Employee WHERE experience = (SELECT MAX(experience) FROM Employee WHERE experience < (SELECT max(experience) FROM Employee))
